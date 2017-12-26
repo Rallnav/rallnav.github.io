@@ -25,7 +25,7 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-###Python命名规则：
+## Python命名规则：
 
 '''类的名字中的单词首字母都是大写的。
 '''
