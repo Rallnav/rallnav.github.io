@@ -15,8 +15,10 @@
 
 
 ## 获取脚本路径
-1、sys.path[0]：获取执行脚本目录绝对路径
+### sys.path[0]：获取执行脚本目录绝对路径
+
 #每次执行脚本时，python会将执行脚本目录加入PYTHONPATH环境变量中(sys.path获取)
+```
 #!/usr/bin/python3
 
 import os
@@ -28,9 +30,10 @@ print(sys.path[0])
 [root@localhost tmp]# ./py_test1/pytest24.py 
 ['/tmp/py_test1', '/usr/local/lib/python36.zip', '/usr/local/lib/python3.6', '/usr/local/lib/python3.6/lib-dynload', '/usr/local/lib/python3.6/site-packages', '/usr/local/lib/python3.6/site-packages/pip-9.0.1-py3.6.egg']
 /tmp/py_test1
+```
 
-
-2、sys.argv[0]：获取脚本执行本身路径；
+### sys.argv[0]：获取脚本执行本身路径；
+```
 #!/usr/bin/python3
 
 import os
@@ -43,10 +46,11 @@ print(sys.argv[0])
 执行2结果：
 [root@localhost tmp]# /tmp/py_test1/pytest24.py  #绝对路径执行脚本则返回绝对路径
 /tmp/py_test1/pytest24.py
-　　注：sys.argv[0]获取得不是脚本目录路径，而是脚本本身执行时的路径！
+```
+注：sys.argv[0]获取得不是脚本目录路径，而是脚本本身执行时的路径！
 
-3、__file__：同sys.argv[0]相似，获取脚本执行本身路径：
-
+###__file__：同sys.argv[0]相似，获取脚本执行本身路径：
+```
 #!/usr/bin/python3
 
 import os
@@ -64,9 +68,9 @@ __file Output: ./py_test1/pytest24.p
 sys.argv[0] Output: /tmp/py_test1/pytest24.py
 __file Output: /tmp/py_test1/pytest24.py
 　　注：__file__获取得不是脚本目录路径，而是脚本本身执行时的路径！
-
-4、os.path.abspath(__file__)和os.path.realpath(__file__)：获取脚本执行本身的绝对路径
-
+```
+### os.path.abspath(__file__)和os.path.realpath(__file__)：获取脚本执行本身的绝对路径
+```
 　　通过获取__file__路径，然后转换成绝对路径
 #!/usr/bin/python3
 
@@ -82,7 +86,7 @@ __file Output: ./py_test1/pytest24.py
 /tmp/py_test1/pytest24.py
 /tmp/py_test1/pytest24.py
 注：os.path.abspath(__file__)和os.path.realpath(__file__)获取得是脚本本身的绝对路径！
-
+```
 
 
 [BackToHomepage](https://rallnav.github.io)
