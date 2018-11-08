@@ -15,5 +15,5 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 [Python](https://rallnav.github.io/pages/LearningPython) 
-
+[Pythonskills](https://rallnav.github.io/pages/mem) 
 [MarkDown](https://rallnav.github.io/pages/MarkDown)
